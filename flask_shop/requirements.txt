@@ -1,0 +1,9 @@
+flask==2.0.2
+flask-Migrate==3.1.0
+flask-Script==2.0.5
+flask-Cors==3.0.10
+SQLAlchemy==1.4.25
+pymysql==1.0.2
+Werkzeug==2.0.2
+flask-restful==0.3.9
+PyJWT==2.6.0

@@ -1,0 +1,53 @@
+###测试用户登录功能
+POST http://127.0.0.1:5000/user/login
+Content-Type: application/json
+
+{
+    "name":"zhangfei",
+    "pwd":"1234"
+
+}
+
+####测试用户注册功能
+POST http://127.0.0.1:5000/user/users/
+Content-Type: application/json
+
+{
+    "name":"yuanshao",
+    "pwd":"123456",
+    "real_pwd":"123456",
+    "email":"2713680918@qq.com",
+    "nick_name":"袁绍",
+    "phone":"17839585182"
+
+
+}
+### 测试获取菜单
+
+GET http://127.0.0.1:5000/menu/menus/?type_=tree
+
+###测试根据id获取单个用户
+GET http://127.0.0.1:5000/user/user/1/
+Content-Type: application/json
+
+###测试获取用户列表
+GET http://127.0.0.1:5000/user/users/
+
+###测试用户修改功能
+PUT http://127.0.0.1:5000/user/user/6/
+Content-Type: application/json
+
+{   
+    "email":"873845860@qq.com",
+    "nick_name":"袁绍",
+    "phone":"15037569945",
+    "role_id":3
+}
+
+
+###测试用户删除功能
+
+DELETE  http://127.0.0.1:5000/user/user/3/
+
+###测试用户重置密码
+GET http://127.0.0.1:5000/user/reset_pwd/4/
